@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		228A817C2676F0CCB1061178 /* Pods_BreakingBadCharecters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3939A48F213B144E6BE2FCA /* Pods_BreakingBadCharecters.framework */; };
 		F4646F0E24D1905000D1F016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F0D24D1905000D1F016 /* AppDelegate.swift */; };
 		F4646F1024D1905000D1F016 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F0F24D1905000D1F016 /* SceneDelegate.swift */; };
 		F4646F1224D1905000D1F016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F1124D1905000D1F016 /* ViewController.swift */; };
@@ -15,6 +16,13 @@
 		F4646F1A24D1905200D1F016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4646F1824D1905200D1F016 /* LaunchScreen.storyboard */; };
 		F4646F2524D1905200D1F016 /* BreakingBadCharectersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F2424D1905200D1F016 /* BreakingBadCharectersTests.swift */; };
 		F4646F3024D1905200D1F016 /* BreakingBadCharectersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F2F24D1905200D1F016 /* BreakingBadCharectersUITests.swift */; };
+		F4646F4224D1A97400D1F016 /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F4124D1A97400D1F016 /* Extensiones.swift */; };
+		F4646F4524D1AA4200D1F016 /* ReactiveExtensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F4424D1AA4200D1F016 /* ReactiveExtensiones.swift */; };
+		F4646F4724D1AA8300D1F016 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F4624D1AA8300D1F016 /* Network.swift */; };
+		F4646F4E24D1B33900D1F016 /* AnimateloadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F4A24D1B33900D1F016 /* AnimateloadingView.swift */; };
+		F4646F4F24D1B33900D1F016 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4646F4B24D1B33900D1F016 /* LoadingView.xib */; };
+		F4646F5024D1B33900D1F016 /* LoadingViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F4C24D1B33900D1F016 /* LoadingViewable.swift */; };
+		F4646F5124D1B33900D1F016 /* loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F4D24D1B33900D1F016 /* loadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E3C4D285A8758C2E07EEAB1 /* Pods-BreakingBadCharecters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadCharecters.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBadCharecters/Pods-BreakingBadCharecters.debug.xcconfig"; sourceTree = "<group>"; };
+		61792530010FAA9BEE76BEDD /* Pods-BreakingBadCharecters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadCharecters.release.xcconfig"; path = "Target Support Files/Pods-BreakingBadCharecters/Pods-BreakingBadCharecters.release.xcconfig"; sourceTree = "<group>"; };
+		F3939A48F213B144E6BE2FCA /* Pods_BreakingBadCharecters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBadCharecters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4646F0A24D1905000D1F016 /* BreakingBadCharecters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBadCharecters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4646F0D24D1905000D1F016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4646F0F24D1905000D1F016 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,13 @@
 		F4646F2B24D1905200D1F016 /* BreakingBadCharectersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakingBadCharectersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4646F2F24D1905200D1F016 /* BreakingBadCharectersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadCharectersUITests.swift; sourceTree = "<group>"; };
 		F4646F3124D1905200D1F016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4646F4124D1A97400D1F016 /* Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
+		F4646F4424D1AA4200D1F016 /* ReactiveExtensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveExtensiones.swift; sourceTree = "<group>"; };
+		F4646F4624D1AA8300D1F016 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		F4646F4A24D1B33900D1F016 /* AnimateloadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateloadingView.swift; sourceTree = "<group>"; };
+		F4646F4B24D1B33900D1F016 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		F4646F4C24D1B33900D1F016 /* LoadingViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewable.swift; sourceTree = "<group>"; };
+		F4646F4D24D1B33900D1F016 /* loadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228A817C2676F0CCB1061178 /* Pods_BreakingBadCharecters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C12C7A196039AA3586F80E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3939A48F213B144E6BE2FCA /* Pods_BreakingBadCharecters.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AC7A3C3808E94D849DC160B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E3C4D285A8758C2E07EEAB1 /* Pods-BreakingBadCharecters.debug.xcconfig */,
+				61792530010FAA9BEE76BEDD /* Pods-BreakingBadCharecters.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F4646F0124D1905000D1F016 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +119,8 @@
 				F4646F2324D1905200D1F016 /* BreakingBadCharectersTests */,
 				F4646F2E24D1905200D1F016 /* BreakingBadCharectersUITests */,
 				F4646F0B24D1905000D1F016 /* Products */,
+				9AC7A3C3808E94D849DC160B /* Pods */,
+				0C12C7A196039AA3586F80E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +137,12 @@
 		F4646F0C24D1905000D1F016 /* BreakingBadCharecters */ = {
 			isa = PBXGroup;
 			children = (
-				F4646F0D24D1905000D1F016 /* AppDelegate.swift */,
-				F4646F0F24D1905000D1F016 /* SceneDelegate.swift */,
+				F4646F5224D1D19800D1F016 /* CharectersScreen */,
+				F4646F4824D1AB0D00D1F016 /* SupportFiles */,
+				F4646F4024D1A87A00D1F016 /* Helpers */,
+				F4646F3D24D1938C00D1F016 /* Resources */,
 				F4646F1124D1905000D1F016 /* ViewController.swift */,
 				F4646F1324D1905000D1F016 /* Main.storyboard */,
-				F4646F1624D1905200D1F016 /* Assets.xcassets */,
-				F4646F1824D1905200D1F016 /* LaunchScreen.storyboard */,
-				F4646F1B24D1905200D1F016 /* Info.plist */,
 			);
 			path = BreakingBadCharecters;
 			sourceTree = "<group>";
@@ -128,6 +165,54 @@
 			path = BreakingBadCharectersUITests;
 			sourceTree = "<group>";
 		};
+		F4646F3D24D1938C00D1F016 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4646F1B24D1905200D1F016 /* Info.plist */,
+				F4646F1824D1905200D1F016 /* LaunchScreen.storyboard */,
+				F4646F1624D1905200D1F016 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4646F4024D1A87A00D1F016 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F4646F4124D1A97400D1F016 /* Extensiones.swift */,
+				F4646F4424D1AA4200D1F016 /* ReactiveExtensiones.swift */,
+				F4646F4624D1AA8300D1F016 /* Network.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F4646F4824D1AB0D00D1F016 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F4646F4924D1B33900D1F016 /* LoadingView */,
+				F4646F0D24D1905000D1F016 /* AppDelegate.swift */,
+				F4646F0F24D1905000D1F016 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		F4646F4924D1B33900D1F016 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				F4646F4A24D1B33900D1F016 /* AnimateloadingView.swift */,
+				F4646F4B24D1B33900D1F016 /* LoadingView.xib */,
+				F4646F4C24D1B33900D1F016 /* LoadingViewable.swift */,
+				F4646F4D24D1B33900D1F016 /* loadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		F4646F5224D1D19800D1F016 /* CharectersScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CharectersScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4646F3424D1905300D1F016 /* Build configuration list for PBXNativeTarget "BreakingBadCharecters" */;
 			buildPhases = (
+				FAD05802B6E794F655E49D8A /* [CP] Check Pods Manifest.lock */,
 				F4646F0624D1905000D1F016 /* Sources */,
 				F4646F0724D1905000D1F016 /* Frameworks */,
 				F4646F0824D1905000D1F016 /* Resources */,
+				AF8D95DA344CA27260F3CA79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4646F1A24D1905200D1F016 /* LaunchScreen.storyboard in Resources */,
+				F4646F4F24D1B33900D1F016 /* LoadingView.xib in Resources */,
 				F4646F1724D1905200D1F016 /* Assets.xcassets in Resources */,
 				F4646F1524D1905000D1F016 /* Main.storyboard in Resources */,
 			);
@@ -254,14 +342,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF8D95DA344CA27260F3CA79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBadCharecters/Pods-BreakingBadCharecters-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBadCharecters/Pods-BreakingBadCharecters-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreakingBadCharecters/Pods-BreakingBadCharecters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD05802B6E794F655E49D8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreakingBadCharecters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4646F0624D1905000D1F016 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F4646F1224D1905000D1F016 /* ViewController.swift in Sources */,
+				F4646F4E24D1B33900D1F016 /* AnimateloadingView.swift in Sources */,
 				F4646F0E24D1905000D1F016 /* AppDelegate.swift in Sources */,
+				F4646F4724D1AA8300D1F016 /* Network.swift in Sources */,
 				F4646F1024D1905000D1F016 /* SceneDelegate.swift in Sources */,
+				F4646F5024D1B33900D1F016 /* LoadingViewable.swift in Sources */,
+				F4646F5124D1B33900D1F016 /* loadingView.swift in Sources */,
+				F4646F4524D1AA4200D1F016 /* ReactiveExtensiones.swift in Sources */,
+				F4646F4224D1A97400D1F016 /* Extensiones.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +568,12 @@
 		};
 		F4646F3524D1905300D1F016 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E3C4D285A8758C2E07EEAB1 /* Pods-BreakingBadCharecters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPKY3LM9M4;
-				INFOPLIST_FILE = BreakingBadCharecters/Info.plist;
+				INFOPLIST_FILE = BreakingBadCharecters/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,11 +588,12 @@
 		};
 		F4646F3624D1905300D1F016 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61792530010FAA9BEE76BEDD /* Pods-BreakingBadCharecters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPKY3LM9M4;
-				INFOPLIST_FILE = BreakingBadCharecters/Info.plist;
+				INFOPLIST_FILE = BreakingBadCharecters/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
