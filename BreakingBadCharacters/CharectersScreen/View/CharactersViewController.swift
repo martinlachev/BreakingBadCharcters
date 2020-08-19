@@ -8,7 +8,9 @@
 
 import UIKit
 
-class CharactersViewController: UIViewController {
+class CharactersViewController: UIViewController, Storyboarded {
+    
+    weak var coordinator: CharactersScreenCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()

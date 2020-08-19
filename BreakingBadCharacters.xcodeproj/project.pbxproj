@@ -23,6 +23,10 @@
 		F4646F4F24D1B33900D1F016 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4646F4B24D1B33900D1F016 /* LoadingView.xib */; };
 		F4646F5024D1B33900D1F016 /* LoadingViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F4C24D1B33900D1F016 /* LoadingViewable.swift */; };
 		F4646F5124D1B33900D1F016 /* loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F4D24D1B33900D1F016 /* loadingView.swift */; };
+		F4F9829524ED5A9E0007479D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9829424ED5A9E0007479D /* Coordinator.swift */; };
+		F4F9829724ED5C1A0007479D /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9829624ED5C1A0007479D /* Storyboarded.swift */; };
+		F4F9829924ED5C890007479D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9829824ED5C890007479D /* MainCoordinator.swift */; };
+		F4F9829B24ED5D270007479D /* CharactersScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9829A24ED5D270007479D /* CharactersScreenCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		F4646F4B24D1B33900D1F016 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		F4646F4C24D1B33900D1F016 /* LoadingViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewable.swift; sourceTree = "<group>"; };
 		F4646F4D24D1B33900D1F016 /* loadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadingView.swift; sourceTree = "<group>"; };
+		F4F9829424ED5A9E0007479D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F4F9829624ED5C1A0007479D /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		F4F9829824ED5C890007479D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		F4F9829A24ED5D270007479D /* CharactersScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +211,7 @@
 		F4646F4824D1AB0D00D1F016 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				F4F9829324ED4C600007479D /* Coordinators */,
 				F4646F4924D1B33900D1F016 /* LoadingView */,
 				F4646F0D24D1905000D1F016 /* AppDelegate.swift */,
 				F4646F0F24D1905000D1F016 /* SceneDelegate.swift */,
@@ -227,6 +236,17 @@
 				F41E786B24EC2D5C00D5E10B /* View */,
 			);
 			path = CharectersScreen;
+			sourceTree = "<group>";
+		};
+		F4F9829324ED4C600007479D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F4F9829424ED5A9E0007479D /* Coordinator.swift */,
+				F4F9829624ED5C1A0007479D /* Storyboarded.swift */,
+				F4F9829824ED5C890007479D /* MainCoordinator.swift */,
+				F4F9829A24ED5D270007479D /* CharactersScreenCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,11 +426,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4646F1224D1905000D1F016 /* CharactersViewController.swift in Sources */,
+				F4F9829924ED5C890007479D /* MainCoordinator.swift in Sources */,
 				F4646F4E24D1B33900D1F016 /* AnimateloadingView.swift in Sources */,
+				F4F9829524ED5A9E0007479D /* Coordinator.swift in Sources */,
 				F4646F0E24D1905000D1F016 /* AppDelegate.swift in Sources */,
+				F4F9829B24ED5D270007479D /* CharactersScreenCoordinator.swift in Sources */,
 				F4646F4724D1AA8300D1F016 /* Network.swift in Sources */,
 				F4646F1024D1905000D1F016 /* SceneDelegate.swift in Sources */,
 				F4646F5024D1B33900D1F016 /* LoadingViewable.swift in Sources */,
+				F4F9829724ED5C1A0007479D /* Storyboarded.swift in Sources */,
 				F4646F5124D1B33900D1F016 /* loadingView.swift in Sources */,
 				F4646F4524D1AA4200D1F016 /* ReactiveExtensiones.swift in Sources */,
 				F4646F4224D1A97400D1F016 /* Extensiones.swift in Sources */,

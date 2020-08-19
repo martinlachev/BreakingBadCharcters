@@ -10,15 +10,21 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
+    var coordinator: MainCoordinator?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let navbarController = createNavBarController()
+        
+        coordinator = MainCoordinator(navigationController: navbarController)
+        coordinator?.start()
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        let homeStoryboard = UIStoryboard(name: "Characters", bundle: nil)
-        let homeVC = homeStoryboard.instantiateViewController(withIdentifier: "Characters")
-        window?.rootViewController = homeVC
+//        let homeStoryboard = UIStoryboard(name: "Characters", bundle: nil)
+//        let homeVC = homeStoryboard.instantiateViewController(withIdentifier: "Characters")
+        window?.rootViewController = navbarController
         window?.makeKeyAndVisible()
         
         return true
@@ -39,5 +45,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate {
+    func createNavBarController() ->  UINavigationController {
+        let navController = UINavigationController()
+        
+        return navController
+    }
 }
 
