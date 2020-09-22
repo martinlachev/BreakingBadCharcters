@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		228A817C2676F0CCB1061178 /* Pods_BreakingBadCharecters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3939A48F213B144E6BE2FCA /* Pods_BreakingBadCharecters.framework */; };
+		E1073EA2251A00F700634A6C /* CharactersScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073EA1251A00F700634A6C /* CharactersScreenViewModel.swift */; };
+		E1073EA7251A013F00634A6C /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073EA6251A013F00634A6C /* FiltersViewController.swift */; };
+		E1073EB3251A0E5800634A6C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073EB2251A0E5800634A6C /* Character.swift */; };
+		ED3A67A34B048C7385FDECD8 /* Pods_BreakingBadCharacters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5367E1380127016535FBAC /* Pods_BreakingBadCharacters.framework */; };
 		F4646F0E24D1905000D1F016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F0D24D1905000D1F016 /* AppDelegate.swift */; };
 		F4646F1024D1905000D1F016 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F0F24D1905000D1F016 /* SceneDelegate.swift */; };
-		F4646F1224D1905000D1F016 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F1124D1905000D1F016 /* CharactersViewController.swift */; };
+		F4646F1224D1905000D1F016 /* CharactersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F1124D1905000D1F016 /* CharactersScreenViewController.swift */; };
 		F4646F1524D1905000D1F016 /* Characters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4646F1324D1905000D1F016 /* Characters.storyboard */; };
 		F4646F1724D1905200D1F016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4646F1624D1905200D1F016 /* Assets.xcassets */; };
 		F4646F1A24D1905200D1F016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4646F1824D1905200D1F016 /* LaunchScreen.storyboard */; };
@@ -47,13 +50,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07D48E26327A6F00AF17ADDD /* Pods-BreakingBadCharacters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadCharacters.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBadCharacters/Pods-BreakingBadCharacters.debug.xcconfig"; sourceTree = "<group>"; };
+		1A5367E1380127016535FBAC /* Pods_BreakingBadCharacters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBadCharacters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3C4D285A8758C2E07EEAB1 /* Pods-BreakingBadCharecters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadCharecters.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBadCharecters/Pods-BreakingBadCharecters.debug.xcconfig"; sourceTree = "<group>"; };
+		3DA4118BCA4A799DAD0A5067 /* Pods-BreakingBadCharacters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadCharacters.release.xcconfig"; path = "Target Support Files/Pods-BreakingBadCharacters/Pods-BreakingBadCharacters.release.xcconfig"; sourceTree = "<group>"; };
 		61792530010FAA9BEE76BEDD /* Pods-BreakingBadCharecters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadCharecters.release.xcconfig"; path = "Target Support Files/Pods-BreakingBadCharecters/Pods-BreakingBadCharecters.release.xcconfig"; sourceTree = "<group>"; };
-		F3939A48F213B144E6BE2FCA /* Pods_BreakingBadCharecters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBadCharecters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1073EA1251A00F700634A6C /* CharactersScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenViewModel.swift; sourceTree = "<group>"; };
+		E1073EA6251A013F00634A6C /* FiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		E1073EB2251A0E5800634A6C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		F4646F0A24D1905000D1F016 /* BreakingBadCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBadCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4646F0D24D1905000D1F016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4646F0F24D1905000D1F016 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4646F1124D1905000D1F016 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		F4646F1124D1905000D1F016 /* CharactersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenViewController.swift; sourceTree = "<group>"; };
 		F4646F1424D1905000D1F016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Characters.storyboard; sourceTree = "<group>"; };
 		F4646F1624D1905200D1F016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4646F1924D1905200D1F016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				228A817C2676F0CCB1061178 /* Pods_BreakingBadCharecters.framework in Frameworks */,
+				ED3A67A34B048C7385FDECD8 /* Pods_BreakingBadCharacters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +114,7 @@
 		0C12C7A196039AA3586F80E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F3939A48F213B144E6BE2FCA /* Pods_BreakingBadCharecters.framework */,
+				1A5367E1380127016535FBAC /* Pods_BreakingBadCharacters.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,8 +124,33 @@
 			children = (
 				2E3C4D285A8758C2E07EEAB1 /* Pods-BreakingBadCharecters.debug.xcconfig */,
 				61792530010FAA9BEE76BEDD /* Pods-BreakingBadCharecters.release.xcconfig */,
+				07D48E26327A6F00AF17ADDD /* Pods-BreakingBadCharacters.debug.xcconfig */,
+				3DA4118BCA4A799DAD0A5067 /* Pods-BreakingBadCharacters.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E1073EA0251A00DD00634A6C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1073EA1251A00F700634A6C /* CharactersScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1073EB1251A0DFF00634A6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1073EB2251A0E5800634A6C /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1073EB7251A132600634A6C /* CharactersCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CharactersCollectionView;
 			sourceTree = "<group>";
 		};
 		F41E786A24EC2D4800D5E10B /* CharacterScreen */ = {
@@ -131,7 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				F4646F1324D1905000D1F016 /* Characters.storyboard */,
-				F4646F1124D1905000D1F016 /* CharactersViewController.swift */,
+				F4646F1124D1905000D1F016 /* CharactersScreenViewController.swift */,
+				E1073EA6251A013F00634A6C /* FiltersViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,7 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				F41E786A24EC2D4800D5E10B /* CharacterScreen */,
-				F4646F5224D1D19800D1F016 /* CharectersScreen */,
+				F4646F5224D1D19800D1F016 /* CharactersScreen */,
 				F4646F4824D1AB0D00D1F016 /* SupportFiles */,
 				F4646F4024D1A87A00D1F016 /* Helpers */,
 				F4646F3D24D1938C00D1F016 /* Resources */,
@@ -211,6 +245,7 @@
 		F4646F4824D1AB0D00D1F016 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				E1073EB7251A132600634A6C /* CharactersCollectionView */,
 				F4F9829324ED4C600007479D /* Coordinators */,
 				F4646F4924D1B33900D1F016 /* LoadingView */,
 				F4646F0D24D1905000D1F016 /* AppDelegate.swift */,
@@ -230,12 +265,14 @@
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
-		F4646F5224D1D19800D1F016 /* CharectersScreen */ = {
+		F4646F5224D1D19800D1F016 /* CharactersScreen */ = {
 			isa = PBXGroup;
 			children = (
+				E1073EB1251A0DFF00634A6C /* Model */,
+				E1073EA0251A00DD00634A6C /* ViewModel */,
 				F41E786B24EC2D5C00D5E10B /* View */,
 			);
-			path = CharectersScreen;
+			path = CharactersScreen;
 			sourceTree = "<group>";
 		};
 		F4F9829324ED4C600007479D /* Coordinators */ = {
@@ -385,15 +422,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BreakingBadCharecters/Pods-BreakingBadCharecters-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBadCharacters/Pods-BreakingBadCharacters-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BreakingBadCharecters/Pods-BreakingBadCharecters-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBadCharacters/Pods-BreakingBadCharacters-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreakingBadCharecters/Pods-BreakingBadCharecters-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreakingBadCharacters/Pods-BreakingBadCharacters-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FAD05802B6E794F655E49D8A /* [CP] Check Pods Manifest.lock */ = {
@@ -411,7 +448,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BreakingBadCharecters-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BreakingBadCharacters-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -425,14 +462,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4646F1224D1905000D1F016 /* CharactersViewController.swift in Sources */,
+				F4646F1224D1905000D1F016 /* CharactersScreenViewController.swift in Sources */,
 				F4F9829924ED5C890007479D /* MainCoordinator.swift in Sources */,
 				F4646F4E24D1B33900D1F016 /* AnimateloadingView.swift in Sources */,
 				F4F9829524ED5A9E0007479D /* Coordinator.swift in Sources */,
+				E1073EA7251A013F00634A6C /* FiltersViewController.swift in Sources */,
 				F4646F0E24D1905000D1F016 /* AppDelegate.swift in Sources */,
 				F4F9829B24ED5D270007479D /* CharactersScreenCoordinator.swift in Sources */,
+				E1073EB3251A0E5800634A6C /* Character.swift in Sources */,
 				F4646F4724D1AA8300D1F016 /* Network.swift in Sources */,
 				F4646F1024D1905000D1F016 /* SceneDelegate.swift in Sources */,
+				E1073EA2251A00F700634A6C /* CharactersScreenViewModel.swift in Sources */,
 				F4646F5024D1B33900D1F016 /* LoadingViewable.swift in Sources */,
 				F4F9829724ED5C1A0007479D /* Storyboarded.swift in Sources */,
 				F4646F5124D1B33900D1F016 /* loadingView.swift in Sources */,
@@ -608,11 +648,11 @@
 		};
 		F4646F3524D1905300D1F016 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E3C4D285A8758C2E07EEAB1 /* Pods-BreakingBadCharecters.debug.xcconfig */;
+			baseConfigurationReference = 07D48E26327A6F00AF17ADDD /* Pods-BreakingBadCharacters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WPKY3LM9M4;
+				DEVELOPMENT_TEAM = NGWXUWZ832;
 				INFOPLIST_FILE = BreakingBadCharacters/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -628,11 +668,11 @@
 		};
 		F4646F3624D1905300D1F016 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61792530010FAA9BEE76BEDD /* Pods-BreakingBadCharecters.release.xcconfig */;
+			baseConfigurationReference = 3DA4118BCA4A799DAD0A5067 /* Pods-BreakingBadCharacters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WPKY3LM9M4;
+				DEVELOPMENT_TEAM = NGWXUWZ832;
 				INFOPLIST_FILE = BreakingBadCharacters/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

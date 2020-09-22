@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharactersViewController: UIViewController, Storyboarded {
+class CharactersScreenViewController: UIViewController, Storyboarded {
     
     weak var coordinator: CharactersScreenCoordinator?
 

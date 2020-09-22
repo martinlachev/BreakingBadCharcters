@@ -42,7 +42,7 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
             return
         }
         
-        if let charactersViewController = fromViewController as? CharactersViewController {
+        if let charactersViewController = fromViewController as? CharactersScreenViewController {
             childDidFinish(charactersViewController.coordinator)
         }
     }

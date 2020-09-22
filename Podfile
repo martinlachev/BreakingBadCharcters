@@ -1,4 +1,4 @@
-target 'BreakingBadCharecters' do
+target 'BreakingBadCharacters' do
  
   use_frameworks!
   

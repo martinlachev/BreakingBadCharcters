@@ -11,7 +11,7 @@ class CharactersScreenCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = CharactersViewController.instantiate(storyboardName: "Characters")
+        let vc = CharactersScreenViewController.instantiate(storyboardName: "Characters")
         vc.coordinator = self
         
         navigationController.navigationBar.barStyle = .black

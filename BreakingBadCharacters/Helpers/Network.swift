@@ -41,7 +41,7 @@ class APIManager {
     
     static func requestData(url:String,method:HTTPMethod,parameters:parameters?,completion: @escaping (ApiResult)->Void) {
         
-        let header =  ["Content-Type": "application/x-www-form-urlencoded"]
+        let header =  ["Content-Type": "application/json"]
         
         var urlRequest = URLRequest(url: URL(string: baseUrl+url)!, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
         urlRequest.allHTTPHeaderFields = header
