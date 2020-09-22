@@ -10,6 +10,9 @@
 		E1073EA2251A00F700634A6C /* CharactersScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073EA1251A00F700634A6C /* CharactersScreenViewModel.swift */; };
 		E1073EA7251A013F00634A6C /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073EA6251A013F00634A6C /* FiltersViewController.swift */; };
 		E1073EB3251A0E5800634A6C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073EB2251A0E5800634A6C /* Character.swift */; };
+		E138A3A8251A3EFE009D92C1 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E138A3A7251A3EFE009D92C1 /* CharactersViewController.swift */; };
+		E138A3AE251A3F78009D92C1 /* CharactersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E138A3AC251A3F77009D92C1 /* CharactersCollectionViewCell.swift */; };
+		E138A3AF251A3F78009D92C1 /* CharactersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E138A3AD251A3F78009D92C1 /* CharactersCollectionViewCell.xib */; };
 		ED3A67A34B048C7385FDECD8 /* Pods_BreakingBadCharacters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5367E1380127016535FBAC /* Pods_BreakingBadCharacters.framework */; };
 		F4646F0E24D1905000D1F016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F0D24D1905000D1F016 /* AppDelegate.swift */; };
 		F4646F1024D1905000D1F016 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4646F0F24D1905000D1F016 /* SceneDelegate.swift */; };
@@ -58,6 +61,9 @@
 		E1073EA1251A00F700634A6C /* CharactersScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenViewModel.swift; sourceTree = "<group>"; };
 		E1073EA6251A013F00634A6C /* FiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		E1073EB2251A0E5800634A6C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		E138A3A7251A3EFE009D92C1 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		E138A3AC251A3F77009D92C1 /* CharactersCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewCell.swift; sourceTree = "<group>"; };
+		E138A3AD251A3F78009D92C1 /* CharactersCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharactersCollectionViewCell.xib; sourceTree = "<group>"; };
 		F4646F0A24D1905000D1F016 /* BreakingBadCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBadCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4646F0D24D1905000D1F016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4646F0F24D1905000D1F016 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,11 +152,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E1073EB7251A132600634A6C /* CharactersCollectionView */ = {
+		E1073EB7251A132600634A6C /* CharactersCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				E138A3AC251A3F77009D92C1 /* CharactersCollectionViewCell.swift */,
+				E138A3AD251A3F78009D92C1 /* CharactersCollectionViewCell.xib */,
 			);
-			path = CharactersCollectionView;
+			path = CharactersCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		F41E786A24EC2D4800D5E10B /* CharacterScreen */ = {
@@ -166,6 +174,7 @@
 				F4646F1324D1905000D1F016 /* Characters.storyboard */,
 				F4646F1124D1905000D1F016 /* CharactersScreenViewController.swift */,
 				E1073EA6251A013F00634A6C /* FiltersViewController.swift */,
+				E138A3A7251A3EFE009D92C1 /* CharactersViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,7 +254,7 @@
 		F4646F4824D1AB0D00D1F016 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				E1073EB7251A132600634A6C /* CharactersCollectionView */,
+				E1073EB7251A132600634A6C /* CharactersCollectionViewCell */,
 				F4F9829324ED4C600007479D /* Coordinators */,
 				F4646F4924D1B33900D1F016 /* LoadingView */,
 				F4646F0D24D1905000D1F016 /* AppDelegate.swift */,
@@ -351,7 +360,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Marto Lachev";
 				TargetAttributes = {
 					F4646F0924D1905000D1F016 = {
@@ -395,6 +404,7 @@
 				F4646F1A24D1905200D1F016 /* LaunchScreen.storyboard in Resources */,
 				F4646F4F24D1B33900D1F016 /* LoadingView.xib in Resources */,
 				F4646F1724D1905200D1F016 /* Assets.xcassets in Resources */,
+				E138A3AF251A3F78009D92C1 /* CharactersCollectionViewCell.xib in Resources */,
 				F4646F1524D1905000D1F016 /* Characters.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,7 +474,9 @@
 			files = (
 				F4646F1224D1905000D1F016 /* CharactersScreenViewController.swift in Sources */,
 				F4F9829924ED5C890007479D /* MainCoordinator.swift in Sources */,
+				E138A3AE251A3F78009D92C1 /* CharactersCollectionViewCell.swift in Sources */,
 				F4646F4E24D1B33900D1F016 /* AnimateloadingView.swift in Sources */,
+				E138A3A8251A3EFE009D92C1 /* CharactersViewController.swift in Sources */,
 				F4F9829524ED5A9E0007479D /* Coordinator.swift in Sources */,
 				E1073EA7251A013F00634A6C /* FiltersViewController.swift in Sources */,
 				F4646F0E24D1905000D1F016 /* AppDelegate.swift in Sources */,
@@ -558,6 +570,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -618,6 +631,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

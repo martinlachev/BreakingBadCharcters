@@ -10,11 +10,10 @@ import Foundation
 
 
 struct Character: Codable {
-    let charId, name, img: String
+    let name, img: String
     
     enum CodingKeys: String, CodingKey {
         case name, img
-        case charId = "char_id"
     }
 }
 

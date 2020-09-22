@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Characters View Controller-->
+        <!--Characters Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="CharactersViewController" id="BYZ-38-t0r" customClass="CharactersViewController" customModule="BreakingBadCharacters" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CharactersScreenViewController" id="BYZ-38-t0r" customClass="CharactersScreenViewController" customModule="BreakingBadCharacters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,18 +36,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUw-gq-hst">
-                                <rect key="frame" x="0.0" y="273.5" width="414" height="602.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="273.5" width="414" height="622.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="LFK-GV-x84" kind="embed" id="okQ-WD-epD"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fVw-BL-aj9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5PX-lL-jV8"/>
-                            <constraint firstAttribute="bottom" secondItem="BUw-gq-hst" secondAttribute="bottom" constant="20" id="6Aa-lv-vX3"/>
+                            <constraint firstAttribute="bottom" secondItem="BUw-gq-hst" secondAttribute="bottom" id="6Aa-lv-vX3"/>
                             <constraint firstItem="fVw-BL-aj9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8eQ-Is-ywg"/>
                             <constraint firstItem="INM-VT-jsq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CY7-Bd-bJk"/>
                             <constraint firstItem="fPg-sd-lgI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KQe-cB-eQJ"/>
@@ -62,6 +62,9 @@
                             <constraint firstItem="INM-VT-jsq" firstAttribute="top" secondItem="fPg-sd-lgI" secondAttribute="bottom" constant="20" id="w3c-2E-orc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="charactersView" destination="BUw-gq-hst" id="pJ1-6i-PRx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,20 +85,41 @@
             </objects>
             <point key="canvasLocation" x="874" y="-121"/>
         </scene>
-        <!--View Controller-->
+        <!--Characters View Controller-->
         <scene sceneID="YHE-dp-n7d">
             <objects>
-                <viewController id="LFK-GV-x84" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CharactersViewController" id="LFK-GV-x84" customClass="CharactersViewController" customModule="BreakingBadCharacters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzq-Jf-pP2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="602.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="622.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y2u-ai-uAQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="622.5"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uu5-bh-aOD">
+                                    <size key="itemSize" width="326" height="489"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YC5-Xa-ga7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y2u-ai-uAQ" firstAttribute="leading" secondItem="YC5-Xa-ga7" secondAttribute="leading" id="3LB-iS-rVg"/>
+                            <constraint firstItem="Y2u-ai-uAQ" firstAttribute="bottom" secondItem="YC5-Xa-ga7" secondAttribute="bottom" id="DOf-N1-9I0"/>
+                            <constraint firstItem="Y2u-ai-uAQ" firstAttribute="top" secondItem="vzq-Jf-pP2" secondAttribute="top" id="Vbh-fE-H0f"/>
+                            <constraint firstItem="Y2u-ai-uAQ" firstAttribute="trailing" secondItem="YC5-Xa-ga7" secondAttribute="trailing" id="vVQ-cB-D1b"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="charactersCollectionView" destination="Y2u-ai-uAQ" id="nLi-4L-UQP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t72-2q-e96" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="170"/>
+            <point key="canvasLocation" x="873.91304347826099" y="169.75446428571428"/>
         </scene>
     </scenes>
     <resources>
